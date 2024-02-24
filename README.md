@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Website Preview](./assets/images/screenshot.png)
+![Website Preview](./blog-preview-card-main//assets/images/screenshot.png)
 
 ### Links
 
