@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL Here](https://toastfreak777.github.io/Frontend-Mentor/)
-- Live Site URL: [N/A](https://github.com/ToastFreak777/Frontend-Mentor/tree/blog-preview-card)
+- [Solution URL Here](https://github.com/ToastFreak777/Frontend-Mentor/tree/blog-preview-card)
+- [Live Site](https://toastfreak777.github.io/Frontend-Mentor/blog-preview-card-main/)
 
 ### Built with
 
