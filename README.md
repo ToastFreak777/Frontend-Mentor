@@ -6,7 +6,6 @@ This is a solution to the Recipe page challenge on Frontend Mentor. Frontend Men
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
@@ -19,14 +18,10 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![Website Preview](./blog-preview-card-main/assets/images/screenshot.png)
-
 ### Links
 
-- [Solution URL Here](https://github.com/ToastFreak777/Frontend-Mentor/tree/blog-preview-card)
-- [Live Site](https://toastfreak777.github.io/Frontend-Mentor/blog-preview-card-main/)
+- [Solution URL Here](https://github.com/ToastFreak777/Frontend-Mentor/tree/recipe-page-main?tab=readme-ov-file)
+- [Live Site](https://toastfreak777.github.io/Frontend-Mentor/recipe-page-main/)
 
 ### Built with
 
