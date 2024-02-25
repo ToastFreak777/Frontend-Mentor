@@ -1,6 +1,6 @@
-# Frontend Mentor - Recipe page solution
+Frontend Mentor - Social links profile
 
-This is a solution to the Recipe page challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the Social links profile challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### Table of contents
 
