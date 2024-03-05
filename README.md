@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/ToastFreak777/Frontend-Mentor/tree/pricing-component-with-toggle-master)
+- [Solution URL](https://github.com/ToastFreak777/Frontend-Mentor/tree/pricing-component-with-toggle?tab=readme-ov-file)
 - [Live site URL](https://toastfreak777.github.io/Frontend-Mentor/pricing-component-with-toggle-master/)
 
 ### Built with
