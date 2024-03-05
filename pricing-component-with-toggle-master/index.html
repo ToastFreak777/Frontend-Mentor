@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="main grid">
+      <header class="header grid">
+        <h1 class="title">Our Pricing</h1>
+        <div class="flex">
+          <p>Annually</p>
+          <div>
+            <input type="checkbox" name="switch" id="check" checked hidden />
+            <label class="toggle" for="check">
+              <span class="circle"></span>
+            </label>
+          </div>
+          <p>Monthly</p>
+        </div>
+      </header>
+
+      <div class="cards grid">
+        <div class="card grid">
+          <p class="card__title">Basic</p>
+          <div>
+            <p class="card__price flex monthly">
+              <span class="dollar-sign">&dollar;</span>19.99
+            </p>
+            <span class="card__price flex annual hidden">
+              <span class="dollar-sign">&dollar;</span>199.99
+            </span>
+          </div>
+          <div class="details grid">
+            <p>500 GB Storage</p>
+            <p>2 Users Allowed</p>
+            <p>Send up to 3 GB</p>
+          </div>
+          <a class="btn" href="#">LEARN MORE</a>
+        </div>
+
+        <div class="card grid primary">
+          <p class="card__title">Professional</p>
+          <div>
+            <span class="card__price flex monthly">
+              <span class="dollar-sign">&dollar;</span>24.99
+            </span>
+            <span class="card__price flex annual hidden">
+              <span class="dollar-sign">&dollar;</span>249.99
+            </span>
+          </div>
+          <div class="details grid">
+            <p>1 TB Storage</p>
+            <p>5 Users Allowed</p>
+            <p>Send up to 10 GB</p>
+          </div>
+          <a class="btn" href="#">LEARN MORE</a>
+        </div>
+
+        <div class="card grid">
+          <p class="card__title">Master</p>
+          <div>
+            <span class="card__price flex monthly">
+              <span class="dollar-sign">&dollar;</span>39.99</span
+            >
+            <span class="card__price flex annual hidden">
+              <span class="dollar-sign">&dollar;</span>399.99</span
+            >
+          </div>
+          <div class="details grid">
+            <p>2 TB Storage</p>
+            <p>10 Users Allowed</p>
+            <p>Send up to 20 GB</p>
+          </div>
+          <a class="btn" href="#">LEARN MORE</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

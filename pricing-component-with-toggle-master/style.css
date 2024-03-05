@@ -1,0 +1,290 @@
+:root {
+  /* - Mobile: 375px */
+  /* - Desktop: 1440px */
+
+  /* > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens. */
+
+  /* ### Primary */
+
+  --Linear-Gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+  /* ### Neutral */
+
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+  --fs-300: 0.8rem;
+  --fs-400: 0.9375rem;
+  --fs-450: 1.15rem;
+  --fs-700: 2rem;
+  --fs-800: 2.4rem;
+  --fs-850: 3.4rem;
+  --fs-900: 4.4rem;
+
+  --ff: "Montserrat";
+  --fw: 700;
+}
+
+/* #region resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* #endregion */
+
+/* Utilities */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.hidden {
+  display: none;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw);
+  font-size: var(--fs-400);
+
+  background: url("./images/bg-top.svg");
+  background-repeat: no-repeat;
+
+  background-position: top right;
+  background-color: var(--Very-Light-Grayish-Blue);
+
+  @media (max-width: 1024px) {
+    background-position: 52vw -5vh;
+  }
+}
+
+.main {
+  padding-block: 5rem;
+  height: 100vh;
+
+  background: url("./images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  @media (max-width: 1024px) {
+    overflow: scroll;
+  }
+}
+
+.header {
+  --gap: 2.5rem 1.5rem;
+  align-content: center;
+
+  .toggle {
+    position: relative;
+
+    display: block;
+    background: var(--Linear-Gradient);
+    border-radius: 100vw;
+    width: 60px;
+    height: 32px;
+
+    .circle {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+
+      width: 24px;
+      height: 24px;
+      background: white;
+      border-radius: 50%;
+
+      transition: left 300ms ease-out;
+    }
+  }
+
+  #check:checked ~ .toggle .circle {
+    left: calc(100% - 24px - 10%);
+  }
+
+  .title {
+    color: var(--Grayish-Blue);
+    font-size: var(--fs-700);
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  & div {
+    justify-content: center;
+    & p {
+      color: var(--Light-Grayish-Blue);
+    }
+  }
+}
+
+.cards {
+  gap: 2rem;
+  place-content: center;
+
+  @media (min-width: 1025px) {
+    display: flex;
+    gap: 0;
+
+    margin: auto;
+  }
+}
+
+.card {
+  min-width: 345px;
+  background-color: white;
+  border-radius: 0.5rem;
+
+  padding: 2rem;
+  text-align: center;
+
+  color: var(--Dark-Grayish-Blue);
+
+  @media (min-width: 768px) {
+    margin-block: 2rem;
+  }
+  @media (max-width: 320px) {
+    min-width: 290px;
+  }
+
+  .card__price {
+    font-size: var(--fs-900);
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+
+    @media (min-width: 768px) {
+      font-size: var(--fs-900);
+    }
+    @media (max-width: 320px) {
+      font-size: var(--fs-850);
+    }
+  }
+
+  .dollar-sign {
+    font-size: var(--fs-800);
+    justify-self: center;
+  }
+
+  .card__title {
+    font-size: var(--fs-450);
+  }
+
+  .details {
+    --gap: 0rem;
+
+    & p {
+      border-block: 1px solid var(--Light-Grayish-Blue);
+      padding: 1rem;
+    }
+
+    & p:first-child {
+      border-block-end: 0;
+    }
+
+    & p:last-child {
+      border-block-start: 0;
+    }
+  }
+
+  .btn {
+    font-size: var(--fs-300);
+    text-decoration: none;
+    background: var(--Linear-Gradient);
+    color: white;
+    border-radius: 0.35rem;
+    border: 0;
+    padding: 0.625rem;
+    letter-spacing: 0.1rem;
+
+    margin-block-start: 1rem;
+
+    &:hover {
+      outline: 1px solid var(--Grayish-Blue);
+      background: white;
+      color: hsl(237, 63%, 64%);
+    }
+  }
+}
+
+.primary {
+  background: var(--Linear-Gradient);
+  color: var(--Very-Light-Grayish-Blue);
+
+  @media (min-width: 768px) {
+    margin-block: 0;
+
+    .card__title {
+      margin-block-start: 2rem;
+    }
+
+    .btn {
+      margin-block-end: 1.5rem;
+      align-self: center;
+    }
+  }
+
+  .details {
+    & p {
+      color: inherit;
+    }
+  }
+
+  .btn {
+    background: white;
+    color: hsl(237, 63%, 64%);
+
+    &:hover {
+      outline: 1px solid white;
+      background: hsl(237, 63%, 64%);
+      color: white;
+    }
+  }
+}
