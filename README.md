@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- [Add solution URL here](https://github.com/ToastFreak777/Frontend-Mentor/tree/news-homepage)
-- [Add live site URL here](https://toastfreak777.github.io/Frontend-Mentor/news-homepage/)
+- [Solution URL](https://github.com/ToastFreak777/Frontend-Mentor/tree/news-homepage)
+- [Live site URL](https://toastfreak777.github.io/Frontend-Mentor/news-homepage-main/)
 
 ### Built with
 
